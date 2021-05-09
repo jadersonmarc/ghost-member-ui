@@ -1,0 +1,24 @@
+.home__container{
+    height: 100%;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "menu content content"
+                         "menu footer footer";
+}
+
+.home__header{
+    grid-area: nav;
+    padding: 20px 0;
+     background-image:
+      url("/home-bg.png");
+}
+
+.home__content{
+    grid-area: menu;
+    background: gray;
+}
+
+.home__footer{
+    grid-area: footer;
+    background: red;
+}
