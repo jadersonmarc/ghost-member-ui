@@ -2,3 +2,27 @@
 
 $font-opensans: "Open Sans", sans-serif;
 $font-montserrat: "Montserrat", sans-serif;
+
+
+$Angeline_Vintage: "Angeline_Vintage";
+$Montserrat-Bold: "Montserrat-Bold";
+$Roboto-Regular: "Roboto-Regular";
+$Roboto-Italic: "Roboto-Italic";
+
+$fonts-list: (
+  $Angeline_Vintage: "Angeline_Vintage",
+  $Montserrat-Bold: "Montserrat-Bold",
+  $Roboto-Regular: "Roboto-Regular",
+  $Roboto-Italic: "Roboto-Italic"
+);
+
+@each $font-name, $src_name in $fonts-list {
+  @font-face {
+    font-family: "#{$font-name}";
+    @if ($font-name== "vrb") {
+      src: url('/fonts/"#{$src_name}".otf');
+    } @else {
+      src: url('/fonts/"#{$src_name}".ttf');
+    }
+  }
+}

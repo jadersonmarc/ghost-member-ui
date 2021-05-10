@@ -1,12 +1,15 @@
 // import our bases
 // colors
-@import "./base/_colors";
+@import "./base/__colors";
 // fonts
-@import "./base/_fonts";
+@import "./base/__fonts";
 @import "./base/_reset";
 @import "./base/_general";
 
 //pages
 @import "./components/pages/__home";
+
+//organisms
+@import "./components/organisms/__header-home";
 
 
