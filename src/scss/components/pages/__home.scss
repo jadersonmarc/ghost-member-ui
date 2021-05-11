@@ -4,19 +4,20 @@
     height: 100%;
     display: grid;
     grid-template-areas: "nav nav nav"
-                         "menu content content"
+                         "content content content"
                          "menu footer footer";
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 .home__header{
     grid-area: nav;
-    
     background-image:
       url("/home-bg.png");
+
 }
 
 .home__content{
-    grid-area: menu;
+    grid-area: content;
     background: gray;
 }
 

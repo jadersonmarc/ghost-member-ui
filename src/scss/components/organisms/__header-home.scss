@@ -10,13 +10,70 @@
     }
 
 }
+
 .bg-cover{
-    height: 100%;
+    height: 200px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
+
+.nav-news{
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     a.nav-link {
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: #ffffff;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+      }
+}
+
 .text-header{
     color: white;
     font-size: 2.125rem;
     font-family: $Angeline_Vintage;
+}
+.container__img_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    img{
+        max-height: 265px;
+    }
+}
+.my-card{
+    max-height: 265px;
+}
+.header__seemore{
+    position: relative;
+    bottom: 220px;
+    color: #fff;
+    p{
+        margin: 0px;
+    }
+    hr{
+        margin-left: 185px;
+        width: 30px;
+        border: 1px solid #03133a;
+        margin-bottom: 50px;
+    }
+    h2{
+        margin-bottom: 40px;
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    a{
+        margin-bottom: 30px;
+        background-color: #03133a;
+        padding: 8px 15px;
+        color: #ffffff !important;
+    }
+   
 }
