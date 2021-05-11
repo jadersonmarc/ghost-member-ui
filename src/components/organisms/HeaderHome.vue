@@ -2,7 +2,7 @@
 
 <template>
 	<div class="text-center ">
-		<div class="bg-cover">
+		<div class="bg-cover mb-5">
 			<h1 class="text-header font-italic font-weight-medium">Ghost Member</h1>
 			<nav class="nav-fill">
 				<ul class="nav-list">
@@ -59,9 +59,8 @@
 				</nav>
 			</div>
 		</div>
-		<div class="container__img_header">
-			<v-card class="my-card">
-				<img src="images/left-img.jpg" />
+		<v-row class="d-flex flex-wrap justify-center  pb-6">
+			<v-card height="385" width="45%" min-width="375" img="images/left-img.jpg">
 				<div class="header__seemore">
 					<p>Spirituality</p>
 					<hr />
@@ -69,16 +68,29 @@
 					<a href="article.html" class="btn">READ MORE</a>
 				</div>
 			</v-card>
-			<v-card class="my-card">
-				<img src="images/right-img.jpg" />
+			<v-card height="385" width="45%" min-width="375" img="images/right-img.jpg">
 				<div class="header__seemore">
 					<p>Spirituality</p>
 					<hr />
-					<h2 class="">Free template designed by FreeHTML5.co</h2>
+					<h2 class="font-weight-black">Free template designed by FreeHTML5.co</h2>
 					<a href="article.html" type="button" class="btn">READ MORE</a>
 				</div>
 			</v-card>
-		</div>
+		</v-row>
+		<v-row class="justify-space-around flex-wrap mx-12 mb-5">
+			<v-img src="images/architecture.png" max-height="180" max-width="290"
+				><h5 class="pa-12 title highlight__item font-weight-black">Architecture</h5></v-img
+			>
+			<v-img src="images/interior.png" max-height="180" max-width="290"
+				><h5 class="pa-12 title highlight__item font-weight-black">Interior</h5></v-img
+			>
+			<v-img src="images/food.png" max-height="180" max-width="290"
+				><h5 class="pa-12 title highlight__item font-weight-black">Food</h5></v-img
+			>
+			<v-img src="images/travel.png" max-height="180" max-width="290"
+				><h5 class="pa-12 title highlight__item font-weight-black">Travel</h5></v-img
+			>
+		</v-row>
 	</div>
 </template>
 
