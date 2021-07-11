@@ -2,7 +2,7 @@
 
 <template>
 	<div class="text-center ">
-		<div class="bg-cover mb-5">
+		<div class="bg-cover mb-3 ">
 			<h1 class="text-header font-italic font-weight-medium">Ghost Member</h1>
 			<social-nav />
 			<header-nav />
