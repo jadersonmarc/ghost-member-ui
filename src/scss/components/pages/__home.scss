@@ -1,29 +1,52 @@
 @import "../../base/_colors";
 
-.home__container{
-    height: 100%;
-    display: grid;
-    margin: 0px auto;
-    grid-template-areas: "nav nav nav"
+.home__container {
+  height: 100%;
+  display: grid;
+  margin: 0px auto;
+  grid-template-areas: "nav nav nav"
                          "content content content"
                          "footer footer footer";
-    grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr
+                      2fr
+                      565px;
 }
 
-.home__header{
-    grid-area: nav;
-    background-image:
-      url("/home-bg.png");
+.home__header {
+  grid-area: nav;
+  background-image: url("/home-bg.png");
 
 }
 
-.home__content{
-    grid-area: content;
-    display: grid;
-    background: $secondary
+.home__content {
+  display: grid;
+  grid-template-areas:  "content_header content_column-header"
+                        "content_lg content_lw"
+                        "content_lg content_lw";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  grid-area: content;
+  background: $secondary;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
-.home__footer{
-    grid-area: footer;
-    background: red;
+.first-column {
+  grid-area: content_header;
+  background: green;
 }
+
+.second-column {
+  grid-area: content_column-header;
+  background: gray;
+}
+
+.home__footer {
+  grid-area: footer;
+  background: red;
+}
+

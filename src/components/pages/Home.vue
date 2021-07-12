@@ -4,7 +4,12 @@
 	<div class="home__container">
 		<HeaderHome class="home__header" />
 		<div class="home__content">
-			<h4>Lorem ipsum dolor sit.</h4>
+      <div class="first-column"></div>
+      <div class="second-column"></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
 		</div>
 		<div class="home__footer">
 			<h4>Lorem ipsum dolor sit.</h4>
