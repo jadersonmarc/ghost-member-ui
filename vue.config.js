@@ -6,12 +6,7 @@ module.exports = {
         types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
     },
 
-    plugins: [
-        // ...
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
-        })
-    ]
+
 }
 
 function addStyleResource(rule) {
