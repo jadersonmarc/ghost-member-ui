@@ -1,2 +1,2 @@
 
-web: npm run serve -- --port 8080
+web: npm run serve
