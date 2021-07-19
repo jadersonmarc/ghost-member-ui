@@ -33,6 +33,8 @@
       </div>
       <div class="boby_content__lg"></div>
       <div class="body_content__sm"></div>
+
+
       <div class="boby_footer__lg"></div>
       <div class="boby_footer__sm"></div>
     </div>
