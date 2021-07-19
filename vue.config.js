@@ -5,7 +5,13 @@ module.exports = {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
     },
-    mode: 'production',
+
+    plugins: [
+        // ...
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        })
+    ]
 }
 
 function addStyleResource(rule) {
