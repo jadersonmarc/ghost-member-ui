@@ -52,20 +52,22 @@
   grid-area: boby_content_lg;
   background: #F7F7F7;
 }
-
+.text_body__header{
+  padding: 45px;
+}
 .body_content__sm {
   grid-area: body_content_sm;
-  background: gray;
+  background: #F7F7F7;
 }
 
 .boby_footer__lg {
   grid-area: body_footer_lg;
-  background: green;
+  background: #F7F7F7;
 }
 
-.boby_footer__sm {
+.body_footer__sm {
   grid-area: body_footer_sm;
-  background: gray;
+  background: #F7F7F7;
 }
 .home__footer {
   grid-area: footer;
