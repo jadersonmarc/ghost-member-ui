@@ -7,7 +7,7 @@
       <div class="boby_header__lg ">
         <v-row class="d-flex">
           <v-col>
-            <v-img height="100%" width="95%" src="images/gallery-img1.png" rounded="0"></v-img>
+            <v-img height="100%" width="100%" src="images/gallery-img1.png" rounded="0"></v-img>
           </v-col>
           <v-col class="text_body__header">
             <p><small>march 27, 2020</small></p>
@@ -63,7 +63,7 @@
       <div class="boby_footer__lg">
         <v-row class="d-flex">
         <v-col>
-          <v-img height="100%" width="95%" src="images/gallery-img4.jpg" rounded="0"></v-img>
+          <v-img height="100%" width="100%" src="images/gallery-img4.jpg" rounded="0"></v-img>
         </v-col>
         <v-col class="text_body__header">
           <p><small>march 27, 2020</small></p>

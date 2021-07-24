@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <template>
-	<v-row class="justify-space-around flex-wrap mx-2 mb-5">
+	<v-row class="justify-space-around flex-wrap mx-2 ">
 		<v-img src="images/architecture.png" max-height="180" max-width="310"
 			><h5 class="pa-12 title highlight__item font-weight-black">Architecture</h5></v-img
 		>

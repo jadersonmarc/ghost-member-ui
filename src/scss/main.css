@@ -181,7 +181,7 @@ table {
 }
 
 .text_body__header {
-  padding: 45px;
+  padding: 40px;
 }
 
 .body_content__sm {
@@ -231,7 +231,6 @@ table {
 }
 
 .bg-cover {
-  height: 200px;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
 }
