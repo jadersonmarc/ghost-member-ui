@@ -202,6 +202,9 @@ table {
   grid-area: body_footer_sm;
   background: #F7F7F7;
 }
+.body_footer__sm h5 {
+  color: #FFFF;
+}
 
 .home__footer {
   grid-area: footer;
