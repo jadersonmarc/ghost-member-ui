@@ -162,20 +162,20 @@ table {
   padding: 140px 60px;
 }
 
-.boby_header__lg {
+.body_header__lg {
   grid-area: boby_header_lg;
   background: #F7F7F7;
 }
 
-.boby_header__sm {
+.body_header__sm {
   grid-area: boby_header_sm;
   background: gray;
 }
-.boby_header__sm h5 {
+.body_header__sm h5 {
   color: #FFFF;
 }
 
-.boby_content__lg {
+.body_content__lg {
   grid-area: boby_content_lg;
   background: #F7F7F7;
 }
@@ -189,7 +189,11 @@ table {
   background: #F7F7F7;
 }
 
-.boby_footer__lg {
+.concat-box {
+  background: #F7F7F7;
+}
+
+.body_footer__lg {
   grid-area: body_footer_lg;
   background: #F7F7F7;
 }
