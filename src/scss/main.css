@@ -225,16 +225,6 @@ table {
   font-size: 15px;
   color: #131313;
 }
-.footer__top input {
-  border: none;
-  font-size: 16px;
-  padding: 15px;
-  border-radius: 0;
-  height: auto;
-}
-.footer__top ::placeholder {
-  color: rgba(19, 19, 19, 0.2);
-}
 .footer__top button {
   width: 139px;
   font-size: 16px;
@@ -249,6 +239,10 @@ table {
   border-color: #06236a;
 }
 
+.social-footer {
+  width: 600px !important;
+}
+
 .footer__bottom {
   grid-area: footer_bottom;
   background-image: url("/home-bg.png");
@@ -257,9 +251,6 @@ table {
   font-size: 75px;
   font-family: "Angeline_Vintage";
   color: #ffffff;
-}
-.footer__bottom .nav-fill {
-  max-width: 250px;
 }
 .footer__bottom .nav-fill a {
   color: #ffffff;

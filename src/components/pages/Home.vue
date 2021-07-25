@@ -84,8 +84,30 @@
     </div>
 
     <div class="home__footer">
-      <div class="footer__top"></div>
-      <div class="footer__bottom"></div>
+      <div class="footer__top d-flex flex-column align-items-center justify-content-center">
+        <h2 class="text-center">Stay Updated</h2>
+        <p class="text-center mt-2">Sign up for our newsletter to receive the latest news and event postings.</p>
+        <div class="d-flex justify-content-center mx-auto mt-4 " style="width: 500px">
+          <v-col>
+            <v-text-field
+                v-model="email"
+                :rules="[rules.required, rules.email]"
+                label="E-mail"
+            ></v-text-field>
+          </v-col>
+          <div class="">
+            <button class="btn btn-success ml-2" type="submit">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom  pt-16">
+        <h1 class="text-header text-center  font-italic font-weight-medium">Ghost Member</h1>
+        <social-nav/>
+        <div class="copyright mt-4">
+          <p class="text-center">&copy; 2021 <a href="#" class="text-white">Marc Jaderson</a>Membro fantasma
+             <a href="#" target="_blank" class="text-white"></a>.</p>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -93,14 +115,29 @@
 
 <script>
 import HeaderHome from '../organisms/HeaderHome';
+import SocialNav from "@/components/molecules/SocialNav";
 
 export default {
   name: 'Home',
 
   components: {
-    HeaderHome,
+    HeaderHome, SocialNav
   },
-  data: () => ({}),
+  data: () => {
+    return {
+
+      email: '',
+      rules: {
+        required: value => !!value || 'Required.',
+        counter: value => value.length <= 20 || 'Max 20 characters',
+        email: value => {
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          return pattern.test(value) || 'Invalid e-mail.'
+        },
+      },
+    }
+
+  },
 };
 </script>
 <style lang="scss">

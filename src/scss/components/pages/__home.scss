@@ -91,7 +91,6 @@
 }
 .footer__top {
   grid-area: footer_top;
-
   background-image: url("/stay-bg.png");
 
   h2 {
@@ -103,21 +102,9 @@
     font-size: 15px;
     color: #131313;
   }
-  input {
-    border: none;
-    font-size: 16px;
 
-    padding: 15px;
-    border-radius: 0;
-    height: auto;
-  }
-  ::placeholder {
-
-    color: rgba(19, 19, 19, 0.2);
-  }
   button {
     width: 139px;
-
     font-size: 16px;
     padding: 15px 0;
     margin-top: -2px;
@@ -130,6 +117,9 @@
     }
   }
 }
+.social-footer{
+  width: 600px !important;
+}
 
 .footer__bottom {
   grid-area: footer_bottom;
@@ -141,7 +131,7 @@
     color: #ffffff;
   }
   .nav-fill {
-    max-width: 250px;
+
     a {
       color: #ffffff;
     }
