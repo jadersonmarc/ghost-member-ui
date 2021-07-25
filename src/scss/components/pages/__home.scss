@@ -19,6 +19,7 @@
 }
 
 .home__content {
+  grid-area: content;
   display: grid;
   grid-template-areas:  "boby_header_lg boby_header_sm"
                         "boby_content_lg body_content_sm"
@@ -27,7 +28,6 @@
   grid-template-rows: 1fr 2fr 1fr;
   column-gap: 25px;
   row-gap: 25px;
-  grid-area: content;
   background: $secondary;
   width: 100%;
   max-width: 1200px;
@@ -43,6 +43,7 @@
 .body_header__sm {
   grid-area: boby_header_sm;
   background: gray;
+
   h5 {
     color: #FFFF;
   }
@@ -52,13 +53,16 @@
   grid-area: boby_content_lg;
   background: #F7F7F7;
 }
-.text_body__header{
+
+.text_body__header {
   padding: 40px;
 }
+
 .body_content__sm {
   grid-area: body_content_sm;
   background: #F7F7F7;
 }
+
 .concat-box {
   background: #F7F7F7;
 }
@@ -76,8 +80,83 @@
     color: #FFFF;
   }
 }
+
 .home__footer {
   grid-area: footer;
-  background: red;
+  display: grid;
+  grid-template-areas:  "footer_top"
+                        "footer_bottom";
+  grid-template-rows: 1fr
+                      1fr;
+}
+.footer__top {
+  grid-area: footer_top;
+
+  background-image: url("/stay-bg.png");
+
+  h2 {
+    font-size: 48px;
+    color: #03133a;
+  }
+  p {
+
+    font-size: 15px;
+    color: #131313;
+  }
+  input {
+    border: none;
+    font-size: 16px;
+
+    padding: 15px;
+    border-radius: 0;
+    height: auto;
+  }
+  ::placeholder {
+
+    color: rgba(19, 19, 19, 0.2);
+  }
+  button {
+    width: 139px;
+
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: -2px;
+    border-radius: 0;
+    background: #03133a;
+    border-color: #03133a;
+    &:hover {
+      background: lighten(#03133a, 10);
+      border-color: lighten(#03133a, 10);
+    }
+  }
 }
 
+.footer__bottom {
+  grid-area: footer_bottom;
+
+  background-image: url("/home-bg.png");
+  h2.logo {
+    font-size: 75px;
+    font-family: $Angeline_Vintage;
+    color: #ffffff;
+  }
+  .nav-fill {
+    max-width: 250px;
+    a {
+      color: #ffffff;
+    }
+    li:hover {
+      a {
+        color: #03133a;
+      }
+    }
+  }
+  .copyright {
+    padding: 34px 0;
+    background-color: rgba(0, 0, 0, 0.451);
+
+    p {
+      color: #999999;
+    }
+  }
+}

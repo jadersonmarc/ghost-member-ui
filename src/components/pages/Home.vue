@@ -84,7 +84,9 @@
     </div>
 
     <div class="home__footer">
-      <h4>Lorem ipsum dolor sit.</h4>
+      <div class="footer__top"></div>
+      <div class="footer__bottom"></div>
+
     </div>
   </div>
 </template>
