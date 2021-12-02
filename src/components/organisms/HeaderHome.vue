@@ -8,7 +8,7 @@
 			<header-nav />
 		</div>
 		<header-image />
-<!--		<header-highlight />-->
+		<header-highlight />
 	</div>
 </template>
 
@@ -16,11 +16,11 @@
 	import SocialNav from '../molecules/SocialNav';
 	import HeaderNav from '../molecules/HeaderNav';
 	import HeaderImage from '../molecules/HeaderImage';
-
+	import HeaderHighlight from '../molecules/HeaderHighlight';
 
 	export default {
 		name: 'home-header',
-		components: { SocialNav, HeaderNav, HeaderImage, },
+		components: { SocialNav, HeaderNav, HeaderImage, HeaderHighlight },
 		data: () => ({}),
 	};
 </script>

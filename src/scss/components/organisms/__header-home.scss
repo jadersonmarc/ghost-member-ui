@@ -1,83 +1,92 @@
 @import "./../../base/_fonts";
 @import "./../../base/_colors";
 
-.nav-list{
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    padding: 15px;
+    display: inline-block;
+  }
+
+}
+
+.bg-cover {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-news {
+  ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    a{
-        padding: 15px;
-        display: inline-block;
-    }
+    margin-top: 30px;
+  }
+
+  a.nav-link {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #ffffff;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.text-header {
+  color: white;
+  font-size: 2.125rem;
+  font-family: $Angeline_Vintage;
+}
+
+.container__img_header {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap !important;
+  justify-content: center;
 
 }
 
-.bg-cover{
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+.header__seemore {
+
+  color: #fff;
+
+  p {
+    margin: 0px;
+  }
+
+  hr {
+    margin-left: 250px;
+    width: 30px;
+    border: 1px solid #03133a;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  a {
+    margin-bottom: 30px;
+    background-color: #03133a;
+    padding: 8px 15px;
+    color: #ffffff !important;
+  }
+
+  a:hover {
+    background-color: #fff;
+    color: #03133a !important;
+  }
+
 }
 
-.nav-news{
-    ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
-     a.nav-link {
-        font-family: 'Montserrat Alternates', sans-serif;
-        color: #ffffff;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-      }
+.card-highlight {
+  width: 24.7% !important;
 }
 
-.text-header{
-    color: white;
-    font-size: 2.125rem;
-    font-family: $Angeline_Vintage;
-}
-.container__img_header{
-    display: flex;
-    width: 100%  ;
-    flex-wrap: wrap !important;
-    justify-content: center;
-
-}
-
-.header__seemore{
-
-    color: #fff;
-    p{
-        margin: 0px;
-    }
-    hr{
-        margin-left: 250px;
-        width: 30px;
-        border: 1px solid #03133a;
-        margin-bottom: 50px;
-    }
-    h2{
-        margin-bottom: 40px;
-        font-size: 20px;
-        max-width: 100%;
-    }
-
-    a{
-        margin-bottom: 30px;
-        background-color: #03133a;
-        padding: 8px 15px;
-        color: #ffffff !important;
-    }
-            a:hover{
-            background-color:#fff;
-            color: #03133a !important;
-        }
-   
-}
-
-
-
-.highlight__item{
-color: $hover-light ;
+.highlight__item {
+  color: $hover-light;
 }

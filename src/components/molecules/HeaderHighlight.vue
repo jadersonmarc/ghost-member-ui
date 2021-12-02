@@ -1,30 +1,30 @@
 <!-- @format -->
 
 <template>
-	<v-row class="justify-space-between flex-wrap mx-2 ">
-		<v-img src="images/architecture.png" max-height="180" max-width="310" class="ml-1"
-			><h5 class="pa-12  title highlight__item font-weight-black">Architecture</h5></v-img
-		>
-		<v-img src="images/interior.png" max-height="180" max-width="310"
-			><h5 class="pa-12 title highlight__item font-weight-black">Interior</h5></v-img
-		>
-		<v-img src="images/food.png" max-height="180" max-width="310"
-			><h5 class="pa-12 title highlight__item font-weight-black">Food</h5></v-img
-		>
-		<v-img src="images/travel.png" max-height="180" max-width="310" class="mr-1"
-			><h5 class="pa-12  title highlight__item font-weight-black">Travel</h5></v-img
-		>
-	</v-row>
+  <div class="d-flex justify-lg-space-between mt-4 ml-3 mr-4">
+    <div class="card card-highlight">
+      <img src="images/architecture.png" class="ml-1" />
+    </div>
+    <div class="card card-highlight">
+      <img src="images/interior.png" class="ml-1" />
+    </div>
+    <div class="card card-highlight">
+      <img src="images/food.png" class="ml-1" />
+    </div>
+    <div class="card card-highlight">
+      <img src="images/travel.png" class="ml-1"/>
+    </div>
+  </div>
 </template>
 
 <script>
-	export default {
-		name: 'header-highlight',
-		components: {},
-		data: () => ({}),
-	};
+export default {
+  name: 'header-highlight',
+  components: {},
+  data: () => ({}),
+};
 </script>
 
 <style lang="scss">
-	@import '@/scss/main.scss';
+@import '@/scss/main.scss';
 </style>
