@@ -1,15 +1,14 @@
 @import "../../base/_colors";
 
 .home__container {
-  height: 100%;
   display: grid;
   margin: 0px auto;
   grid-template-areas: "nav nav nav"
                          "content content content"
                          "footer footer footer";
   grid-template-rows: 1fr
-                      2fr
-                      565px;
+                      4fr
+                      1fr;
 }
 
 .home__header {
